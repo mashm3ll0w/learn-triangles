@@ -9,39 +9,63 @@
 		<title>Learning Triangles</title>
 	</head>
 	<body>
-		<h1>Learn About Triangles</h1>
-    <p>How much do you know about triangles?</p>
-    <p>A triangle is a polygon with three edges and three vertices. It is one of the basic shapes in geometry.</p>
+		<div class="jumbotron">
+			<div class="title-section">
+				<h1 class="heading">Learn About Triangles</h1>
+				<p class="intro">How much do you know about triangles?</p>
+				<p class="intro">A triangle is a polygon with three edges and three vertices. It is one of the basic shapes in geometry.</p>
+			</div>
+		</div>
 
 		<h2>There are 3 types of triangles</h2>
-		<img src="img/equilateral.png" alt="equilateral triangle" />
-		<p>An <strong>Equilateral Triangle</strong> is a triangle whose <code>3 sides are equal</code>.</p>
-		<img src="img/isosceles.svg" alt="isosceles triangle" />
-		<p>An <strong>Isosceles Triangle</strong> is a triangle whose only <code>2 sides are equal</code>.</p>
-		<img src="img/scalene.png" alt="scalene triangle" />
-		<p>A <strong>Scalene Triangle</strong> is a triangle in which <code>none</code> of the sides are equal.</p>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 triangle">
+					<img src="img/equilateral.png" alt="equilateral triangle" />
+					<p>An <strong>Equilateral Triangle</strong> is a triangle whose <br> <code>3 sides are equal</code>.</p>
+				</div>
+				<div class="col-md-3 triangle">
+					<img src="img/isosceles.svg" alt="isosceles triangle" />
+					<p>An <strong>Isosceles Triangle</strong> is a triangle whose only <br> <code>2 sides are equal</code>.</p>
+				</div>
+				<div class="col-md-3 triangle">
+					<img src="img/scalene.png" alt="scalene triangle" />
+					<p>A <strong>Scalene Triangle</strong> is a triangle in which <code>none</code> of the sides are equal.</p>
+				</div>
+				<div class="col-md-3 triangle">
+					<!-- <h2>And a special kind of triangle</h2> -->
+					<img src="img/right-triangle.svg" alt="right-angled triangle" />
+					<p><strong>Right angled triangle!! <br></strong>Ever heard of the <br> <strong><code>Pythagoras' theorem</code></strong>?</p>
+					<p>
+						The formula goes as thus: <br> <code>a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></code>
+					</p>
+				</div>
+			</div>
+		</div>
 
-		<h2>And a special kind of triangle</h2>
-		<img src="img/right-triangle.svg" alt="right-angled triangle" />
-		<p>A <strong>Right-angled</strong> triangle is a triangle whose formula, <code>Pythagoras' theorem</code> is very famous in mathematics.</p>
-		<p>
-			The formula goes as thus: <code>a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></code>
-		</p>
+		<div class="container forms">
+			<h2>Find Your Triangle</h2>
+			<form action="submit">
+				<div class="form-group">
+					<label for="hypotenuse">Enter the length for hypotenuse</label>
+					<input type="text" class="form-control" id="hypotenuse" placeholder="hypotenuse(longest side)" autocomplete="off" />
+				</div>
+				<div class="form-group">
+					<label for="opposite">Enter length for opposite side</label>
+					<input type="text" class="form-control" id="opposite" placeholder="opposite side" autocomplete="off" />
+				</div>
+				<div class="form-group">
+					<label for="adjacent">Enter length for adjacent side</label>
+					<input type="text" class="form-control" id="adjacent" placeholder="adjacent side" autocomplete="off" />
+				</div>
+				<button type="submit" class="btn btn-lg btn-info" value="submit" onclick="triangleCalculator()">Find My Triangle!</button>
+			</form>
+		</div>
+
+		<footer>
+			<p><a href="github.com/mashm3ll0w">GitHub</a> | 2019 | Karl</p>
+		</footer>
+
 		<script src="js/script.js" charset="utf-8" type="text/javascript"></script>
-
-		<h2>Enter each side of a triangle to tell which category it falls under</h2>
-		<form action="submit">
-			<label for="hypotenuse">Enter the length for hypotenuse</label>
-      <input type="text" class="" id="hypotenuse" placeholder="hypotenuse(longest side)" autocomplete="off" />
-      <label for="opposite">Enter length for opposite side</label>
-      <input type="text" class="" id="opposite" placeholder="opposite side" autocomplete="off">
-      <label for="adjacent">Enter length for adjacent side</label>
-      <input type="text" class="" id="adjacent" placeholder="adjacent side" autocomplete="off">
-      <button type="submit" class="" value="submit" onclick="triangleCalculator()">Find My Triangle!</button>
-    </form>
-    
-    <footer>
-      <p><a href="github.com/mashm3ll0w">GitHub</a> | 2019 | Karl</p>
-    </footer>
 	</body>
 </html>
