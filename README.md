@@ -1,6 +1,10 @@
 # **LEARN TRIANGLES**
 
+
+
 [![license](https://img.shields.io/github/license/mashm3ll0w/learn-triangles.svg)](tps://github.com/mashm3ll0w/learn-triangles/blob/master/LICENSE.md) ![Maintenance](https://img.shields.io/maintenance/yes/2019.svg) ![GitHub last commit](https://img.shields.io/github/last-commit/mashm3ll0w/learn-triangles.svg) ![GitHub repo size in bytes](https://img.shields.io/github/repo-size/mashm3ll0w/learn-triangles.svg) ![learning.code](https://img.shields.io/badge/code-robot-success.svg)  ![mash.mellow](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-mash.mellow-%23e30000.svg)
+
+
 
 This project shows the 3 basic types of triangles as can be seen in this [Wikipedia](https://en.wikipedia.org/wiki/Triangle) link.
 I've added a 4th one for learning purposes.
@@ -25,6 +29,12 @@ $ cd learn-triangles
 # Load the project in Atom
 $ atom .
 ```
+
+## Technologies used
+* HTML
+* CSS
+* Bootstrap
+* Javascript
 
 ## Authors
 
